@@ -1,0 +1,9 @@
+[
+  { "title": "Главная", "link": "/index.html" },
+  { "title": "Урология", "link": "/urology.html" },
+  { "title": "Гинекология", "link": "/gynecology.html" },
+  { "title": "Дерматология и косметология", "link": "/content/dermatology.html" },
+  { "title": "Инструкция", "link": "/instruction.html" },
+  { "title": "Специалистам", "link": "/specialists.html" },
+  { "title": "Часто задаваемые вопросы", "link": "/faq.html" }
+]

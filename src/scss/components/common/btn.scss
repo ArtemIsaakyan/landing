@@ -1,0 +1,22 @@
+.btn-violet {
+  background-color: $basic-violet;
+  color: $basic-white;
+  padding: 16px 35px;
+  border-radius: 10px;
+}
+
+.btn-violet:hover {
+  background-color: #4F46BA;
+  transition: all .2s ease-in-out;
+}
+
+.btn-orange {
+  padding: 16px 125px 14px 126px;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-orange;
+  border-radius: 5px;
+}
