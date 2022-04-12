@@ -1,0 +1,160 @@
+.choose {
+  padding-bottom: 178px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__right {
+    width: 40%;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: $basic-violet;
+    text-transform: uppercase;
+  }
+
+  &__header {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 29px;
+    color: $basic-black;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__line {
+    background: #E6E6E6;
+    height: 1px;
+    margin: 23px 0 28px 0;
+  }
+
+  &__check {
+    position: absolute;
+    left: 0;
+    top: 11%;
+  }
+
+  &__item {
+    font-style: normal;
+    position: relative;
+    font-weight: 500;
+    padding-left: 38px;
+    font-size: 19px;
+    line-height: 30px;
+    list-style: none;
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+  }
+
+  &__back-card {
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    padding: 30px 65px 30px 34px;
+    width: 100%;
+  }
+
+  &__back-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0 0 34px 0;
+    color: $basic-black;
+  }
+
+  &__guard {
+    position: absolute;
+    top: -41px;
+    left: 383px;
+  }
+
+  &__profile {
+   display: flex;
+   margin-bottom: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__avatar {
+    margin-right: 17px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: $basic-black;
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: $basic-text-color;
+  }
+
+  &__link {
+    margin-top: 15px;
+    color: $basic-link-red;
+  }
+
+  &__front-card {
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    padding: 26px 92px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 182px;
+    left: 197px;
+  }
+
+  &__front-avatar {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  &__front-name {
+    margin: 22px 0 6px 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: $basic-black;
+  }
+
+  &__btn {
+    margin-top: 33px;
+  }
+}

@@ -1,0 +1,75 @@
+.steps {
+  text-align: center;
+  padding-bottom: 114px;
+
+  &__header {
+    color: $basic-black;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    margin: 0 0 20px 0;
+  }
+
+  &__description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  &__blocks {
+    display: grid;
+    justify-content: space-between;
+    margin-top: 69px;
+    grid-template-columns: auto auto auto;
+    text-align: left;
+    column-gap: 85px;
+  }
+
+  &__block {
+    max-width: 279px;
+  }
+
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 24px 0 0 0;
+    color: $basic-black;
+  }
+
+  &__icon {
+    background-color: $basic-bg-icons;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: $basic-text-grey-color;
+    line-height: 24px;
+  }
+}
+
+.bg-first-block {
+  background: url('/img/svg-sprite-icons/1.svg') no-repeat;
+  background-position-x: right;
+}
+
+.bg-second-block {
+  background: url('/img/svg-sprite-icons/2.svg') no-repeat;
+  background-position-x: right;
+}
+
+
+.bg-third-block {
+  background: url('/img/svg-sprite-icons/3.svg') no-repeat;
+  background-position-x: right;
+}
+
+

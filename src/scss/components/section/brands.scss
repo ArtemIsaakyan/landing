@@ -1,0 +1,22 @@
+.brands {
+  margin: 116px 0 90px 0;
+  text-align: center;
+  &__header {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: $basic-black;
+    margin-bottom: 29px;
+  }
+
+  &__logo {
+    margin-right: 50px;
+    padding: 10px;
+  }
+
+  &__logo:last-child {
+    margin-right: 0;
+  }
+
+}

@@ -6,17 +6,25 @@
 }
 
 .btn-violet:hover {
-  background-color: #4F46BA;
+  background-color: $basic-violet-hover;
   transition: all .2s ease-in-out;
 }
 
 .btn-orange {
   padding: 16px 125px 14px 126px;
   font-style: normal;
-font-weight: 700;
-font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-orange;
   border-radius: 5px;
+}
+
+.btn-blue {
+  padding: 9px 43px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: $basic-white;
+  background-color: $basic-blue;
 }
