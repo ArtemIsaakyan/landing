@@ -1,3 +1,82 @@
 .reviews {
+    margin-bottom: 96px;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $basic-violet;
+  }
 
+  &__header {
+    margin: 15px 0 40px 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: $basic-black;
+  }
+
+  &__woman {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__right {
+    margin-left: 50px;
+    &-title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 30px;
+      color: $basic-black;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    color: $basic-black;
+    margin: 0;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__stars {
+    margin: 14px 0 6px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 35px;
+
+    .swiper-btn-prev {
+      margin-right: 10px;
+    }
+  }
 }
+
+.swiper-button-disabled circle{
+  fill: $basic-bg-button-disabled;
+}
+

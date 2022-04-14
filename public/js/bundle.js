@@ -11643,6 +11643,14 @@ require('./components/nav');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+_swiper2.default.use([_swiper.Navigation]);
+var swiper = new _swiper2.default('.reviews__woman', {
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev'
+  }
+});
+
 },{"./components/nav":92,"swiper":91}]},{},[93])
 
 //# sourceMappingURL=bundle.js.map

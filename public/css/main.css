@@ -1167,4 +1167,183 @@ a {
   color: #000000;
   margin: 0; }
 
+.reviews {
+  margin-bottom: 96px; }
+  .reviews__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3734A9; }
+  .reviews__header {
+    margin: 15px 0 40px 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000; }
+  .reviews__woman {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    padding: 0; }
+  .reviews__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .reviews__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .reviews__right {
+    margin-left: 50px; }
+    .reviews__right-title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      margin: 0 0 16px 0; }
+  .reviews__description {
+    font-size: 16px;
+    line-height: 24px; }
+  .reviews__name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0; }
+  .reviews__position {
+    font-size: 14px;
+    line-height: 24px; }
+  .reviews__stars {
+    margin: 14px 0 6px 0; }
+  .reviews__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 35px; }
+    .reviews__buttons .swiper-btn-prev {
+      margin-right: 10px; }
+
+.swiper-button-disabled circle {
+  fill: #7f78d7; }
+
+.blogs {
+  margin-bottom: 116px; }
+  .blogs__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 65px; }
+  .blogs__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0;
+    color: #000000; }
+  .blogs__category {
+    font-size: 16px;
+    line-height: 30px; }
+  .blogs__name {
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000; }
+  .blogs__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0; }
+  .blogs__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .blogs__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .blogs__right {
+    width: 100%; }
+  .blogs__item {
+    margin-right: 30px; }
+  .blogs__name {
+    padding: 11px 0 8px 0; }
+  .blogs__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 26px 0;
+    border-bottom: 2px solid #DEE1E6; }
+  .blogs__list:first-child {
+    padding-top: 0; }
+  .blogs__list-data {
+    font-size: 16px; }
+  .blogs__list-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000; }
+  .blogs__img {
+    height: 100%; }
+  .blogs__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 16px; }
+
+.contacts__container {
+  background: #3734A9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.contacts__header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  margin: 0; }
+
+.contacts__description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff; }
+
 /*# sourceMappingURL=maps/main.css.map */
