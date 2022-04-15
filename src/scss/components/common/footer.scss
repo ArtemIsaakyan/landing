@@ -1,0 +1,87 @@
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    column-gap: 70px;
+    border-bottom: 2px solid #E5E5EA;
+    padding-bottom: 59px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    color: $basic-black;
+  }
+
+  &__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: $basic-black;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__input {
+    width: 198px;
+    padding: 15px 20px;
+    border: none;
+    margin-right: -3px;
+    outline: none;
+    background-color: #f9f9f9;
+  }
+
+  &__input::placeholder {
+    color: #CCCBD1;
+  }
+
+  &__btn {
+    color: $basic-white;
+    padding: 11.3px 43px 15px 43px;
+    background-color: $basic-violet;
+  }
+
+  &__note {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 21px;
+    color: #8C8A99;
+  }
+
+  &__copyright {
+    text-align: center;
+    padding: 40px 0 64px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-black ;
+
+  }
+
+}

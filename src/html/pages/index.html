@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link href="/css/main.css" rel="stylesheet" />
+  <script src="/files/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
   <title>Landing Page</title>
 </head>
 <body>
   <img class="bg" src="/img/bg/bg-violet.svg" alt="" srcset="">
   <img class="bg-polygon" src="/img/bg/Polygon.svg" alt="" srcset="">
-  <header class="header">
+  <header class="header wow animate__animated animate__fadeInDown">
     <div class="header__container container">
       <a href="#" class="header__logo">ShapeVoice</a>
       <ul class="header__navigation">
@@ -40,8 +48,8 @@
     </div>
   </header>
   <main class="main__container container">
-    <section class="greeting">
-      <div class="greeting__left">
+    <section class="greeting wow">
+      <div class="greeting__left wow animate__animated animate__bounceInLeft">
         <h1 class="greeting__header">Managing business<br> payments has never<br> been easier</h1>
         <p class="greeting__description">Yet bed any for travelling assistance indulgence<br> unpleasing. Not thoughts all exercise blessing.<br> Indulgence way everything.</p>
         <div class="greeting__buttons">
@@ -49,7 +57,7 @@
           <p class="greeting__play-video"><img class="greeting__play-svg" src="/img/svg-sprite-icons/play-video-btn.svg" alt="play-btn"> See How It Works</p>
         </div>
       </div>
-      <div class="greeting__right">
+      <div class="greeting__right wow animate__animated animate__bounceInRight">
         <h4 class="greeting__title">Get Started for Free</h4>
         <div class="greeting__form">
           <input class="greeting__input" placeholder="E-mail" type="text" name="" id="">
@@ -72,10 +80,12 @@
     </section>
     <section class="steps">
       <div class="steps__container container">
-        <h1 class="steps__header">Believing neglected so so allowance</h1>
-        <p class="steps__description">We so opinion friends me message as delight. Whole front do of<br> plate heard oh ought. His defective nor convinced residence own.</p>
-        <a class="steps__btn btn-violet" href="#">We so opinion friends me message as delight.</a>
-        <div class="steps__blocks">
+        <span class="wow animate__animated animate__fadeInTopLeft">
+          <h1 class="steps__header">Believing neglected so so allowance</h1>
+          <p class="steps__description">We so opinion friends me message as delight. Whole front do of<br> plate heard oh ought. His defective nor convinced residence own.</p>
+          <a class="steps__btn btn-violet" href="#">We so opinion friends me message as delight.</a>
+        </span>
+        <div class="steps__blocks wow animate__animated animate__fadeInUp">
           <div class="steps__block bg-first-block">
             <img class="steps__icon" src="/img/svg-sprite-icons/light.svg" alt="light">
             <h4 class="steps__title">Led Ask Possible Mistress</h4>
@@ -94,15 +104,15 @@
         </div>
       </div>
     </section>
-    <section class="promo">
+    <section class="promo wow animate__animated animate__fadeInBottomLeft">
       <div class="promo__container">
         <h1 class="promo__title">Track your crytpo portfolio on the best way possible</h1>
         <a class="promo__btn btn-violet" href="#">Check It Out</a>
       </div>
     </section>
-    <section class="choose">
+    <section class="choose wow">
       <div class="choose__container container">
-        <div class="choose__left">
+        <div class="choose__left wow animate__animated animate__bounceInLeft">
           <div class="choose__back-card">
             <img class="choose__guard" src="/img/svg-sprite-icons/guard.svg" alt="guard">
             <h3 class="choose__back-header">100+ Verified Users</h3>
@@ -136,7 +146,7 @@
             <a class="choose__btn btn-blue" href="#">CONTACT</a>
           </div>
         </div>
-        <div class="choose__right">
+        <div class="choose__right wow animate__animated animate__bounceInRight">
           <p class="choose__title">Why Choose Us</p>
           <h1 class="choose__header">Thirty for remove plenty regard you summer though.</h1>
           <p class="choose__description">The its enable direct men depend highly. Ham windows sixteen who inquiry fortune demands.</p>
@@ -151,9 +161,9 @@
     </section>
     <section class="product">
       <div class="product__container container">
-        <h1 class="product__header">Push your code to product with ease.</h1>
-        <p class="product__description">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
-        <div class="product__blocks">
+        <h1 class="product__header wow animate__animated animate__fadeInTopLeft">Push your code to product with ease.</h1>
+        <p class="product__description wow animate__animated animate__fadeInTopLeft">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+        <div class="product__blocks wow animate__animated animate__fadeInBottomRight">
           <div class="product__block">
             <h4 class="product__title">Do believing oh disposing to supported</h4>
             <p class="product__text">Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. </p>
@@ -173,7 +183,7 @@
         <a class="product__btn btn-violet" href="#">More About Platform</a>
       </div>
     </section>
-    <section class="connect">
+    <section class="connect wow animate__animated animate__bounceInLeft">
       <div class="connect__container container">
         <h2 class="connect__title">Preference connect astonished </h2>
         <div class="connect__items">
@@ -338,19 +348,54 @@
   </main>
   <section class="contacts">
     <div class="contacts__container">
-      <div class="contacts__left">
+      <div class="contacts__left wow animate__animated animate__bounceInLeft">
         <p class="contacts__title">Why Choose Us</p>
         <h1 class="contacts__header">Partiality on or continue in the particular principles</h1>
         <p class="contacts__description">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>  
       </div>
-      <div class="contacts__right">
+      <div class="contacts__right wow animate__animated animate__bounceInRight">
         <input class="contacts__input" type="email" placeholder="Email Address">
         <input class="contacts__input" type="password" placeholder="Password">
         <a class="contacts__btn btn-orange" href="#">Get Started</a>
       </div>
     </div>
   </section>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__navigation">
+        <div class="footer__owner">
+          <p class="footer__title">AR Shakir</p>
+          <p class="footer__position">Finance helps companies<br> manage payments easily.</p>
+        </div>
+        <div class="footer__company">
+          <p class="footer__title">Company</p>
+          <ul class="footer__items">
+            <li class="footer__item"><a href="#">About Us</a></li>
+            <li class="footer__item"><a href="#">Careers</a></li>
+            <li class="footer__item"><a href="#">Blog</a></li>
+            <li class="footer__item"><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__resources">
+          <p class="footer__title">Resources</p>
+          <ul class="footer__items">
+            <li class="footer__item"><a href="#">Proposal Template</a></li>
+            <li class="footer__item"><a href="#">Invoice Template</a></li>
+            <li class="footer__item"><a href="#">Tuturoial</a></li>
+            <li class="footer__item"><a href="#">How to write a contract</a></li>
+          </ul>
+        </div>
+        <div class="footer__join">
+          <p class="footer__title">Join Our Newsletter</p>
+          <input class="footer__input" type="email" placeholder="Your email address">
+          <a class="footer__btn" href="#">Subscribe</a>
+          <p class="footer__note">*  Will send you weekly updates for your better<br>
+            finance management.</p>
+        </div>
+      </div>
+      <p class="footer__copyright">Copyright @ AR Shakir 2022. All Rights Reserved.</p>
+    </div>
+  </footer>
   <script src="/js/bundle.js"></script>
 </body>
 </html>
