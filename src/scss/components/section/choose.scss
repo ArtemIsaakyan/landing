@@ -1,5 +1,16 @@
 .choose {
   padding-bottom: 178px;
+  @media screen and (max-width: 1157px) {
+    padding-bottom: 65px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 145px;
+  }
+
+  @media screen and (max-width: 910px) {
+    padding-bottom: 50px;
+  }
 
   &__container {
     display: flex;
@@ -8,10 +19,16 @@
 
   &__left {
     position: relative;
+    @media screen and (max-width: 910px) {
+      display: none;
+    }
   }
 
   &__right {
     width: 40%;
+    @media screen and (max-width: 910px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -29,6 +46,11 @@
     line-height: 60px;
     margin-bottom: 29px;
     color: $basic-black;
+    @media screen and (max-width: 1200px) {
+      font-size: 30px;
+      line-height: 38px;
+      margin-top: 8px;
+    }
   }
 
   &__description {
@@ -138,6 +160,9 @@
     position: absolute;
     top: 182px;
     left: 197px;
+    @media screen and (max-width: 1200px) {
+      padding: 26px 50px;
+    }
   }
 
   &__front-avatar {

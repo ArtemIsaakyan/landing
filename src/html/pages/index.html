@@ -18,38 +18,43 @@
 <body>
   <img class="bg" src="/img/bg/bg-violet.svg" alt="" srcset="">
   <img class="bg-polygon" src="/img/bg/Polygon.svg" alt="" srcset="">
-  <header class="header wow animate__animated animate__fadeInDown">
+  <header class="header wow animate__animated animate__slideInDown">
     <div class="header__container container">
-      <a href="#" class="header__logo">ShapeVoice</a>
-      <ul class="header__navigation">
-        <li class="header__nav-main">
-          <a class="header__link" href="#">Product</a><img class="header__arrow first" src="/img/svg-sprite-icons/arrow-link.svg">
-          <ul class="header__sublist first-sublist">
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 1</a></li>
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 2</a></li>
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 3</a></li>
+      <div class="header__body">
+        <a href="#" class="header__logo">ShapeVoice</a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Product</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Template</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
           </ul>
-        </li>
-        <li class="header__nav-main">
-          <a class="header__link" href="#">Template</a><img class="header__arrow second" src="/img/svg-sprite-icons/arrow-link.svg">
-          <ul class="header__sublist second-sublist">
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 1</a></li>
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 2</a></li>
-            <li class="header__nav-secondary"><a class="header__link" href="#">List 3</a></li>
+          <ul class="header__list right-list">
+            <li class="header__item">
+              <a href="#" class="header__link">Sign In</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link blue-header-btn btn-violet">Start Free</a>
+            </li>
           </ul>
-        </li>
-        <li class="header__nav-main"><a class="header__link" href="#">Blog</a></li>
-        <li class="header__nav-main"><a class="header__link" href="#">Pricing</a></li>
-      </ul>
-      <div class="header__right">
-        <a class="header__right-link" href="#">Sign In</a>
-        <a class="header__right-link btn-violet" href="#">Start Free</a>
+        </nav>
       </div>
     </div>
   </header>
   <main class="main__container container">
-    <section class="greeting wow">
-      <div class="greeting__left wow animate__animated animate__bounceInLeft">
+    <section class="greeting">
+      <div class="greeting__left">
         <h1 class="greeting__header">Managing business<br> payments has never<br> been easier</h1>
         <p class="greeting__description">Yet bed any for travelling assistance indulgence<br> unpleasing. Not thoughts all exercise blessing.<br> Indulgence way everything.</p>
         <div class="greeting__buttons">
@@ -57,7 +62,7 @@
           <p class="greeting__play-video"><img class="greeting__play-svg" src="/img/svg-sprite-icons/play-video-btn.svg" alt="play-btn"> See How It Works</p>
         </div>
       </div>
-      <div class="greeting__right wow animate__animated animate__bounceInRight">
+      <div class="greeting__right">
         <h4 class="greeting__title">Get Started for Free</h4>
         <div class="greeting__form">
           <input class="greeting__input" placeholder="E-mail" type="text" name="" id="">
@@ -80,12 +85,12 @@
     </section>
     <section class="steps">
       <div class="steps__container container">
-        <span class="wow animate__animated animate__fadeInTopLeft">
+        <span>
           <h1 class="steps__header">Believing neglected so so allowance</h1>
           <p class="steps__description">We so opinion friends me message as delight. Whole front do of<br> plate heard oh ought. His defective nor convinced residence own.</p>
-          <a class="steps__btn btn-violet" href="#">We so opinion friends me message as delight.</a>
+          <a class="steps__btn btn-violet" href="#">We so opinion friends.</a>
         </span>
-        <div class="steps__blocks wow animate__animated animate__fadeInUp">
+        <div class="steps__blocks">
           <div class="steps__block bg-first-block">
             <img class="steps__icon" src="/img/svg-sprite-icons/light.svg" alt="light">
             <h4 class="steps__title">Led Ask Possible Mistress</h4>
@@ -104,15 +109,15 @@
         </div>
       </div>
     </section>
-    <section class="promo wow animate__animated animate__fadeInBottomLeft">
+    <section class="promo">
       <div class="promo__container">
         <h1 class="promo__title">Track your crytpo portfolio on the best way possible</h1>
         <a class="promo__btn btn-violet" href="#">Check It Out</a>
       </div>
     </section>
-    <section class="choose wow">
+    <section class="choose">
       <div class="choose__container container">
-        <div class="choose__left wow animate__animated animate__bounceInLeft">
+        <div class="choose__left">
           <div class="choose__back-card">
             <img class="choose__guard" src="/img/svg-sprite-icons/guard.svg" alt="guard">
             <h3 class="choose__back-header">100+ Verified Users</h3>
@@ -146,7 +151,7 @@
             <a class="choose__btn btn-blue" href="#">CONTACT</a>
           </div>
         </div>
-        <div class="choose__right wow animate__animated animate__bounceInRight">
+        <div class="choose__right">
           <p class="choose__title">Why Choose Us</p>
           <h1 class="choose__header">Thirty for remove plenty regard you summer though.</h1>
           <p class="choose__description">The its enable direct men depend highly. Ham windows sixteen who inquiry fortune demands.</p>
@@ -161,9 +166,9 @@
     </section>
     <section class="product">
       <div class="product__container container">
-        <h1 class="product__header wow animate__animated animate__fadeInTopLeft">Push your code to product with ease.</h1>
-        <p class="product__description wow animate__animated animate__fadeInTopLeft">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
-        <div class="product__blocks wow animate__animated animate__fadeInBottomRight">
+        <h1 class="product__header">Push your code to product with ease.</h1>
+        <p class="product__description">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+        <div class="product__blocks">
           <div class="product__block">
             <h4 class="product__title">Do believing oh disposing to supported</h4>
             <p class="product__text">Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. </p>
@@ -183,7 +188,7 @@
         <a class="product__btn btn-violet" href="#">More About Platform</a>
       </div>
     </section>
-    <section class="connect wow animate__animated animate__bounceInLeft">
+    <section class="connect">
       <div class="connect__container container">
         <h2 class="connect__title">Preference connect astonished </h2>
         <div class="connect__items">
@@ -209,9 +214,7 @@
         <div class="swiper-wrapper reviews__container">
           <div class="swiper-slide">
             <div class="reviews__block">
-              <div class="reviews__left">
-                <img src="/img/slider/woman.png" alt="woman">
-              </div>
+                <img class="reviews__image" src="/img/slider/woman.png" alt="woman">
               <div class="reviews__right">
                 <h4 class="reviews__right-title">
                   Save Time Managing Social<br>
@@ -232,9 +235,7 @@
           </div>
           <div class="swiper-slide">
             <div class="reviews__block">
-              <div class="reviews__left">
-                <img src="/img/slider/woman.png" alt="woman">
-              </div>
+                <img class="reviews__image" src="/img/slider/woman.png" alt="woman">
               <div class="reviews__right">
                 <h4 class="reviews__right-title">
                   Save Time Managing Social<br>
@@ -255,9 +256,7 @@
           </div>
           <div class="swiper-slide">
             <div class="reviews__block">
-              <div class="reviews__left">
-                <img src="/img/slider/woman.png" alt="woman">
-              </div>
+                <img class="reviews__image" src="/img/slider/woman.png" alt="woman">
               <div class="reviews__right">
                 <h4 class="reviews__right-title">
                   Save Time Managing Social<br>
@@ -348,12 +347,12 @@
   </main>
   <section class="contacts">
     <div class="contacts__container">
-      <div class="contacts__left wow animate__animated animate__bounceInLeft">
+      <div class="contacts__left">
         <p class="contacts__title">Why Choose Us</p>
         <h1 class="contacts__header">Partiality on or continue in the particular principles</h1>
         <p class="contacts__description">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>  
       </div>
-      <div class="contacts__right wow animate__animated animate__bounceInRight">
+      <div class="contacts__right">
         <input class="contacts__input" type="email" placeholder="Email Address">
         <input class="contacts__input" type="password" placeholder="Password">
         <a class="contacts__btn btn-orange" href="#">Get Started</a>

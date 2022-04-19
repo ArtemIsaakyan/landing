@@ -1,39 +1,169 @@
 .header {
   color: $basic-black;
-  margin-top: 43px;
+  width: 100%;
+  position: fixed;
   z-index: 100;
-  position: relative;
+  background-color: $basic-white;
+
+  &__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
-    
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   &__logo {
     margin: auto 0;
+    position: relative;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
+    z-index: 3;
   }
 
-  &__navigation {
+  &__list {
     display: flex;
-    list-style: none;
+    position: relative;
+    background-color: $basic-white;
+    z-index: 2;
     padding: 0;
+
+    @include sm-md {
+      display: block;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    margin: 0 0 0 20px;
+    
+    @include sm-md {
+      margin: 0 0 20px 0;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $basic-black;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.2px;
     font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 5px;
+
+    @include sm-md {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+    }
   }
 
-  &__nav-main {
-    margin-right: 26px;
+  &__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: none;
+    z-index: 3;
+
+    @include sm-md {
+      display: block;
+    }
   }
 
-  &__nav-main:last-child {
-    margin-right: 0;
+  &__burger.active span{
+    transform: scale(0);
   }
+
+  &__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  &__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  &__burger span {
+    position: absolute;
+    background-color: $basic-black;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 8px;
+    transition: all .2s ease 0s;
+  }
+
+  &__burger:before,
+  &__burger:after {
+    content: '';
+    background-color: $basic-black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all .2s ease 0s;
+  }
+
+  &__burger:before {
+    top: 0;
+  }
+
+  &__burger:after {
+    bottom: 0;
+  }
+
+  &__menu {
+    display: contents;
+    @include sm-md {
+      display: block;
+      position: fixed;
+      top: -100%;
+      overflow: auto;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 80px;
+      transition: all .2s ease 0s;
+      padding-top: 100px;
+    }
+  }
+  &__menu.active {
+    top: 0;
+  }
+}
+
+.right-list {
+  @include sm-md {
+    display: none;
+  }
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+
+
 
   &__arrow {
     margin-left: 12px;
@@ -68,6 +198,10 @@
 
   &__right-link {
     margin-right: 49px;
+
+    // @include md-only {
+    //  margin-right: 6px; 
+    // }
   }
 
   &__right-link:last-child {
@@ -97,3 +231,5 @@
 .arrow-active {
   transform: rotate(180deg);
 }
+
+

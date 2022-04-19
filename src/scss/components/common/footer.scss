@@ -10,6 +10,10 @@
     column-gap: 70px;
     border-bottom: 2px solid #E5E5EA;
     padding-bottom: 59px;
+    @media screen and (max-width: 1111px) {
+      grid-template-columns: auto;
+      row-gap: 30px;
+    }
   }
 
   &__title {
@@ -63,6 +67,9 @@
     color: $basic-white;
     padding: 11.3px 43px 15px 43px;
     background-color: $basic-violet;
+    @media screen and (max-width: 1216px) {
+      width: 152px;
+    }
   }
 
   &__note {
@@ -76,12 +83,18 @@
 
   &__copyright {
     text-align: center;
-    padding: 40px 0 64px 0;
+    padding: 40px 0;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     color: $basic-black ;
+  }
 
+  &__join {
+    @media screen and (max-width: 1216px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 }

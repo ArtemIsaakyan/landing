@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -14,6 +17,10 @@
     line-height: 50px;
     margin: 0;
     color: $basic-black;
+    @media screen and (max-width: 1235px) {
+      font-size: 26px;
+      text-align: center;
+    }
   }
 
   &__category {
@@ -44,6 +51,9 @@
 
   &__left {
     display: flex;
+    @media screen and (max-width: 1235px) {
+      display: none;
+    }
   }
 
   &__right {
@@ -88,5 +98,13 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 16px;
+  }
+
+  &__button {
+    @media screen and (max-width: 600px) {
+      text-align: center;
+      margin: 0 auto;
+      width: 200px;
+    }
   }
 }

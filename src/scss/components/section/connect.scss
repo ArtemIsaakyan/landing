@@ -6,14 +6,23 @@
     box-sizing: border-box;
     box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
     border-radius: 22px;
-    margin-top: 123px;
-    margin-bottom: 125px;
+    margin: 123px 0;
     padding: 40px 44px;
     display: flex;
+
+    @media screen and (max-width: 1216px) {
+      margin: 65px 0;
+      padding: 40px 30px;
+      flex-direction: column;
+    }
   }
 
   &__items {
     display: flex;
+    @media screen and (max-width: 1216px) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -24,6 +33,10 @@
     font-size: 18px;
     line-height: 26px;
     margin-right: 40px;
+    @media screen and (max-width: 1216px) {
+      margin-top: 15px;
+      width: 100%;
+    }
   }
 
   &__item:last-child {
@@ -32,6 +45,12 @@
 
   &__icon {
     margin-right: 18px;
+    height: 100%;
+  }
+
+  &__description {
+    width: 100%;
+    margin: auto 0;
   }
 
   &__title {
@@ -41,5 +60,8 @@
     line-height: 46px;
     color: $basic-black;
     margin: 0;
+    @media screen and (max-width: 1216px) {
+      text-align: center;
+    }
   }
 }

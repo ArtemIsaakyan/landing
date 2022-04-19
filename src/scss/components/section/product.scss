@@ -27,11 +27,15 @@
     grid-column: 15px;
     column-gap: 30px;
     margin-bottom: 42px;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: auto;
+      row-gap: 30px;
+    }
   }
 
   &__block {
     text-align: left;
-    padding: 99px 33px 39px 33px;
+    padding: 60px 33px 39px 33px;
     background: #FFFFFF;
     border: 1px solid #DFDFDF;
     border-radius: 22px;
@@ -74,5 +78,16 @@
 
   &__arrow {
     padding-left: 11px;
+  }
+
+  &__btn {
+    display: flex;
+    width: 175px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      margin-top: 57px;
+      justify-content: center;
+    }
   }
 }

@@ -1,5 +1,8 @@
 .reviews {
     margin-bottom: 96px;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 50px;
+    }
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -29,17 +32,35 @@
 
   &__block {
     display: flex;
+    @media screen and (max-width: 1157px) {
+      text-align: center;
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #eaeaea;
+    }
+  }
+
+  &__image {
+    margin-right: 50px;
+    width: 50%;
+    height: 100%;
+    @media screen and (max-width: 1157px) {
+      display: none;
+    }
   }
 
   &__right {
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &-title {
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
       line-height: 30px;
       color: $basic-black;
-      margin: 0 0 16px 0;
+      margin: 0 0 0 0;
     }
   }
 
@@ -55,6 +76,9 @@
     line-height: 30px;
     color: $basic-black;
     margin: 0;
+    @media screen and (max-width: 1157px) {
+      line-height: 17px;
+    }
   }
 
   &__position {
@@ -64,11 +88,15 @@
 
   &__stars {
     margin: 14px 0 6px 0;
+    @media screen and (max-width: 1157px) {
+      margin: 14px 0 -1px 0;
+    }
   }
 
   &__buttons {
     display: flex;
     margin-top: 35px;
+
 
     .swiper-btn-prev {
       margin-right: 10px;

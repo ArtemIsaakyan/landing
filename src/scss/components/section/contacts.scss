@@ -1,23 +1,38 @@
 .contacts {
   background: #3734A9;
-  padding: 75px 0;
+  padding: 75px 15px;
   margin-bottom: 123px;
+  @media screen and (max-width: 1111px) {
+    margin-bottom: 65px;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 50%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__right {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      margin: 30px auto 0 auto;
+    }
+
   }
 
   &__title {
@@ -57,9 +72,21 @@
     margin-bottom: 24px;
     color: #827FC8;
     background-color: #5C5BB8;
+    @media screen and (max-width: 900px) {
+      width: 80%;
+      margin: 0 auto 24px auto;
+    }
   }
 
   &__input::placeholder {
     color: #827FC8;
+  }
+
+  &__btn {
+    text-align: center;
+    @media screen and (max-width: 900px) {
+      width: 144px;
+      margin: 0 auto;
+    }
   }
 }

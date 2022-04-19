@@ -1,11 +1,17 @@
 .greeting {
   color: $basic-black;
   display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1010px) {
+    flex-direction: column;
+  }
 
   &__left {
     display: flex;
     flex-direction: column;
-    padding-right: 123px;
+    @media screen and (max-width: 1157px) {
+      text-align: center;
+    }
   }
 
   &__header {
@@ -14,6 +20,10 @@
     font-size: 60px;
     line-height: 74px;
     margin-bottom: 19px;
+    @media screen and (max-width: 1157px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   &__description {
@@ -22,17 +32,28 @@
     font-size: 20px;
     line-height: 1.5em;
     color: $basic-text-color;
+    @media screen and (max-width: 1157px) {
+      font-size: 18px;
+    }
   }
 
   &__buttons {
     display: flex;
     margin-top: 47px;
+    @media screen and (max-width: 1157px) {
+      margin: 30px auto 24px auto;
+      flex-direction: column;
+    }
   }
 
   &__button {
     padding: 15px 36px;
     border-radius: 47px;
     margin-right: 50px;
+    @media screen and (max-width: 1157px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
 
   }
 
@@ -47,6 +68,7 @@
 
   &__play-svg {
     margin-right: 17px;
+    height: 100%;
     cursor: pointer;
   }
 
@@ -54,8 +76,11 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     color: $basic-violet;
+    @media screen and (max-width: 1157px) {
+      text-align: center;
+    }
   }
 
   &__form {
@@ -71,6 +96,18 @@
     padding: 16px 21px;
     outline: none;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1157px) {
+      margin: 0 auto 24px auto;
+      width: 77%;
+    }
+  }
+
+  &__get-started {
+    @media screen and (max-width: 1010px) {
+      width: 105px;
+      margin: 0 auto;
+    }
   }
 
 }
