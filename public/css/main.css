@@ -612,10 +612,6 @@ body {
   -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale; }
 
-@media all and (min-width: 769px) {
-  body {
-    font-size: 18px; } }
-
 h1 {
   margin: 0;
   font-size: 40px;
@@ -683,7 +679,8 @@ a {
     padding: 0; }
     @media all and (max-width: 768px) {
       .header__list {
-        display: block; } }
+        display: block;
+        height: 100%; } }
   .header__item {
     list-style: none;
     margin: 0 0 0 20px; }
@@ -765,7 +762,7 @@ a {
         transition: all .2s ease 0s;
         padding-top: 100px; } }
   .header__menu.active {
-    top: 0; }
+    top: -36px; }
 
 @media all and (max-width: 768px) {
   .right-list {
@@ -850,6 +847,7 @@ a {
 .btn-orange {
   padding: 16px 10px;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -980,7 +978,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media screen and (max-width: 1010px) {
+  @media screen and (max-width: 900px) {
     .greeting {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -994,8 +992,20 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 900px) {
       .greeting__left {
+        text-align: center;
+        margin-bottom: 50px; } }
+  .greeting__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media screen and (max-width: 900px) {
+      .greeting__right {
         text-align: center; } }
   .greeting__header {
     font-style: normal;
@@ -1003,17 +1013,18 @@ a {
     font-size: 60px;
     line-height: 74px;
     margin-bottom: 19px; }
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 1100px) {
       .greeting__header {
-        font-size: 30px;
-        line-height: 40px; } }
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 15px; } }
   .greeting__description {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5em;
     color: #64607D; }
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 1100px) {
       .greeting__description {
         font-size: 18px; } }
   .greeting__buttons {
@@ -1021,21 +1032,29 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin-top: 47px; }
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 1100px) {
       .greeting__buttons {
-        margin: 30px auto 24px auto;
+        margin-top: 20px; } }
+    @media screen and (max-width: 900px) {
+      .greeting__buttons {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+    @media screen and (max-width: 460px) {
+      .greeting__buttons {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        margin: 0 auto; } }
   .greeting__button {
     padding: 15px 36px;
     border-radius: 47px;
-    margin-right: 50px; }
-    @media screen and (max-width: 1157px) {
+    margin-right: 50px;
+    line-height: 1.7; }
+    @media screen and (max-width: 460px) {
       .greeting__button {
-        margin-right: 0;
-        margin-bottom: 15px; } }
+        margin: 20px 0 20px 0; } }
   .greeting__play-video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1055,9 +1074,9 @@ a {
     font-size: 24px;
     margin: 20px 0;
     color: #3734A9; }
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 1100px) {
       .greeting__title {
-        text-align: center; } }
+        margin: 0 0 20px 0; } }
   .greeting__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1065,23 +1084,18 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
+    @media screen and (max-width: 900px) {
+      .greeting__form {
+        margin: 0 auto; } }
   .greeting__input {
-    width: 312px;
     height: 26px;
     border-radius: 5px;
     border: 1px solid #DFE4F1;
     padding: 16px 21px;
     outline: none;
     margin-bottom: 24px; }
-    @media screen and (max-width: 1157px) {
-      .greeting__input {
-        margin: 0 auto 24px auto;
-        width: 77%; } }
-  @media screen and (max-width: 1010px) {
-    .greeting__get-started {
-      width: 105px;
-      margin: 0 auto; } }
 
 .brands {
   margin: 116px 0 90px 0;
@@ -1779,26 +1793,41 @@ a {
     line-height: 60px;
     color: #ffffff;
     margin: 0 0 30px 0; }
+    @media screen and (max-width: 1100px) {
+      .contacts__header {
+        font-size: 35px;
+        line-height: 40px;
+        margin: 0 0 20px 0; } }
   .contacts__description {
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 1.5em;
     color: #ffffff; }
+    @media screen and (max-width: 1100px) {
+      .contacts__description {
+        font-size: 18px; } }
+  .contacts__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    @media screen and (max-width: 900px) {
+      .contacts__form {
+        margin: 0 auto; } }
   .contacts__input {
-    width: 312px;
     height: 26px;
     border-radius: 5px;
     border: none;
     outline: none;
     padding: 16px 21px;
     margin-bottom: 24px;
-    color: #827FC8;
+    color: #ffffff;
     background-color: #5C5BB8; }
-    @media screen and (max-width: 900px) {
-      .contacts__input {
-        width: 80%;
-        margin: 0 auto 24px auto; } }
   .contacts__input::-webkit-input-placeholder {
     color: #827FC8; }
   .contacts__input::-moz-placeholder {
@@ -1811,9 +1840,5 @@ a {
     color: #827FC8; }
   .contacts__btn {
     text-align: center; }
-    @media screen and (max-width: 900px) {
-      .contacts__btn {
-        width: 144px;
-        margin: 0 auto; } }
 
 /*# sourceMappingURL=maps/main.css.map */

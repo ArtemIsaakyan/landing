@@ -2,14 +2,25 @@
   color: $basic-black;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 1010px) {
+  
+  @media screen and (max-width: 900px) {
     flex-direction: column;
   }
 
   &__left {
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 900px) {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 900px) {
       text-align: center;
     }
   }
@@ -20,9 +31,10 @@
     font-size: 60px;
     line-height: 74px;
     margin-bottom: 19px;
-    @media screen and (max-width: 1157px) {
-      font-size: 30px;
+    @media screen and (max-width: 1100px) {
+      font-size: 35px;
       line-height: 40px;
+      margin-bottom: 15px;
     }
   }
 
@@ -32,7 +44,7 @@
     font-size: 20px;
     line-height: 1.5em;
     color: $basic-text-color;
-    @media screen and (max-width: 1157px) {
+    @media screen and (max-width: 1100px) {
       font-size: 18px;
     }
   }
@@ -40,9 +52,15 @@
   &__buttons {
     display: flex;
     margin-top: 47px;
-    @media screen and (max-width: 1157px) {
-      margin: 30px auto 24px auto;
+    @media screen and (max-width: 1100px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 460px) {
       flex-direction: column;
+      margin: 0 auto;
     }
   }
 
@@ -50,11 +68,10 @@
     padding: 15px 36px;
     border-radius: 47px;
     margin-right: 50px;
-    @media screen and (max-width: 1157px) {
-      margin-right: 0;
-      margin-bottom: 15px;
+    line-height: 1.7;
+    @media screen and (max-width: 460px) {
+      margin: 20px 0 20px 0;
     }
-
   }
 
   &__play-video {
@@ -78,36 +95,28 @@
     font-size: 24px;
     margin: 20px 0;
     color: $basic-violet;
-    @media screen and (max-width: 1157px) {
-      text-align: center;
+    @media screen and (max-width: 1100px) {
+      margin: 0 0 20px 0;
     }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    @media screen and (max-width: 900px) {
+      margin: 0 auto;
+    }
   }
 
   &__input {
-    width: 312px;
     height: 26px;
     border-radius: 5px;
     border: 1px solid #DFE4F1;
     padding: 16px 21px;
     outline: none;
     margin-bottom: 24px;
-
-    @media screen and (max-width: 1157px) {
-      margin: 0 auto 24px auto;
-      width: 77%;
-    }
   }
 
-  &__get-started {
-    @media screen and (max-width: 1010px) {
-      width: 105px;
-      margin: 0 auto;
-    }
-  }
 
 }
